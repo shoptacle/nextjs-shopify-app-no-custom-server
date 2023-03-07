@@ -18,7 +18,7 @@ The app template in this repo is up-to-date, maintained, tested and working! Enj
 
 ## Deploy your own
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Ft-kelly%2Fnextjs-shopify-app&env=NEXT_PUBLIC_SHOPIFY_APP_API_KEY,SHOPIFY_APP_API_SECRET_KEY&project-name=shopify-nextjs-app&repo-name=shopify-nextjs-app&integration-ids=oac_V3R1GIpkoJorr6fqyiwdhl17)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fshoptacle%2Fnextjs-shopify-app-no-custom-server&env=NEXT_PUBLIC_SHOPIFY_APP_API_KEY,SHOPIFY_APP_API_SECRET_KEY&project-name=shopify-app-starter&repo-name=nextjs-shopify-app-no-custom-server&integration-ids=oac_V3R1GIpkoJorr6fqyiwdhl17)
 
 This examples uses [Upstash](https://upstash.com/) (Serverless Redis Database) as its data storage. During deployment, you will be asked to connect with Upstash. The integration will help you create a free Redis database and link it to your Vercel project automatically.
 
