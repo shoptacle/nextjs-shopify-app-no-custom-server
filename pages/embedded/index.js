@@ -54,7 +54,7 @@ export default function Index() {
               },
             ]}
           >
-            <Image
+            <img
               alt=""
               width="100%"
               height="100%"

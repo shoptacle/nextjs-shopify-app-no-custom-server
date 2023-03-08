@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "start": "concurrently --prefix \" {name} |\" -k -c green,magenta --names \"  App\",Ngrok npm:start:dev npm:start:tunnel",
+    "start:dev": "next dev",
+    "start:tunnel": "ngrok http 3000 --region eu",
     "lint": "next lint --fix",
-    "dev": "next dev",
     "tunnel": "cloudflared tunnel --config .cloudflared/config.yml run",
     "debug": "NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
-    "start": "next start",
     "prepare": "husky install",
     "pre-commit": "next lint"
   },
@@ -25,13 +26,15 @@
     "graphql": "^16.6.0",
     "ioredis": "^5.2.4",
     "next": "^13.0.2",
-    "react": "^18.2.0",
+    "react": "^18.2.0x",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@shopify/cli": "^3.44.1",
+    "@types/ioredis": "^4.28.10",
+    "concurrently": "^7.6.0",
     "eslint": "8.26.0",
     "eslint-config-next": "13.0.2",
-    "husky": "^8.0.1",
-    "@types/ioredis": "^4.28.10"
+    "husky": "^8.0.1"
   }
 }
